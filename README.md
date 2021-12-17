@@ -23,6 +23,8 @@ Recommended streamlabs Settings:
 -Font Size: 50px  
 -Hide Messages After: Always show Messages  
 
+Updates:
+-Added additional .html and .js files to randomize chat line height
 
 To Do:
 -Fix scrolling message text snapping back to the center
