@@ -24,10 +24,10 @@ Recommended streamlabs Settings:
 -Hide Messages After: Always show Messages  
 
 Updates:
--Added additional .html and .js files to randomize chat line height
--Badges and display names can be added without breaking the scrolling animation
+-Added additional .html and .js files to randomize chat line height  
+-Badges and display names can be added without breaking the scrolling animation  
 
 To Do:
--Fix scrolling message text snapping back to the center
--Dynamically determine message width
+-Fix scrolling message text snapping back to the center  
+-Dynamically determine message width  
 
