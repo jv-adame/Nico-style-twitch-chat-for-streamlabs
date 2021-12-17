@@ -8,10 +8,10 @@ To use:
 -Go to Chat Box  
 -Scroll down to Enable Custom HTML/CSS and hit Enabled  
 -Paste the copied text in the CSS tab. Make sure to replace all the existing text  
--Copy the text from nicoTwitchChat.js
--Paste the copied text in the JS tab.  Make sure to replace all the existing text
--Copy the text from nicoTwitchChat.html
--Paste the copied text in the HTML tab.  Make sure to replace all the existing text
+-Copy the text from nicoTwitchChat.js  
+-Paste the copied text in the JS tab.  Make sure to replace all the existing text  
+-Copy the text from nicoTwitchChat.html  
+-Paste the copied text in the HTML tab.  Make sure to replace all the existing text  
 
 -Add a browser source to OBS with the chat widget URL (You can find this near the top of the Chat Box page)  
 --I recommend setting the Width, Height, and FPS to the same as your stream settings  
