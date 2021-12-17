@@ -30,25 +30,33 @@ body {
     color: {text_color};
 }
 
-#log>div {
-}
+
 
 .colon {
     display: none;
 }
 
 #log {
-    display: table;
-    position: absolute;
+    display: flex;
+    position: relative;
     bottom: 0;
     left: 0;
     padding: 0 10px 10px;
     width: 100%;
-    table-layout: fixed;
+  	height: 100%; 
+  	border: 3px dotted white;
 }
 
 #log>div {
-    display: table-row;
+  
+    opacity: .8;    
+    position: absolute;
+  /*  animation: LRMove 6s linear, RLMove 6s linear 6s forwards;   */
+  	 animation: LRMove 6s linear, RLMove 6s linear 6s forwards;  
+    -webkit-animation: LRMove 6s linear, RLMove 6s linear 6s forwards;
+    word-wrap: break-word;
+    width: 65%;  
+  	border: 3px solid green;
 }
 
 #log>div.deleted {
@@ -71,7 +79,6 @@ body {
 
 #log .message,#log .meta {
     vertical-align: top;
-    display: table-cell;
     padding-bottom: 0.1em;
 }
 
@@ -85,18 +92,13 @@ body {
 }
 
 #log .message {
-	/*chat transparency*/
-    opacity: .8;    
-    position: relative;
-	/*Adjust scroll speed here. Replace 3s*/
-    animation: LRMove 3s linear, RLMove 3s linear 3s forwards;   
-    -webkit-animation: LRMove 3s linear, RLMove 3s linear 3s forwards;
-    word-wrap: break-word;
-    width: 65%;
+
 }
 
-/*Badges and usernames are disabled. Enabling them and adding them to the animation kind of breaks it.
- Feel free to get it working if you'd like*/
+/*Badges and usernames are disabled. 
+Enable them by changing the display property to 'inline-block'
+Disable them by changing the display property to 'none'
+*/
 .badge {
     display: none;
     margin-right: 0.2em;
@@ -107,7 +109,7 @@ body {
 }
 
 .name {
-  	display: none;
+  	display: inline-block;
     margin-left: 0.2em;
 }
 
