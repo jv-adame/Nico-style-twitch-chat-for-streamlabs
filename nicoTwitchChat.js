@@ -12,11 +12,16 @@ document.addEventListener('onEventReceived', function(obj) {
 });
 
 function getRandomPercent(){
-  //min and max need to be integers between 0 and 100
-  
+  /*
+    Determines a random percentage of the chatbox height that the message will appear on
+    relative to the top of the chatbox 
+  */
+
+ // Adjust the minimum and maximum height the chat messages will display
+ // min and max need to be integers between 0 and 100 
+
   let min = 0;
-  let max = 80;
-  
+  let max = 80;  
   
   let placement = Math.floor(Math.random() * (max - min + 1) + min);
   let percent = placement + "%";

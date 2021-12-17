@@ -44,19 +44,16 @@ body {
     padding: 0 10px 10px;
     width: 100%;
   	height: 100%; 
-  	border: 3px dotted white;
 }
 
 #log>div {
   
     opacity: .8;    
     position: absolute;
-  /*  animation: LRMove 6s linear, RLMove 6s linear 6s forwards;   */
-  	 animation: LRMove 6s linear, RLMove 6s linear 6s forwards;  
+  	animation: LRMove 6s linear, RLMove 6s linear 6s forwards;  
     -webkit-animation: LRMove 6s linear, RLMove 6s linear 6s forwards;
     word-wrap: break-word;
     width: 65%;  
-  	border: 3px solid green;
 }
 
 #log>div.deleted {
@@ -95,10 +92,10 @@ body {
 
 }
 
-/*Badges and usernames are disabled. 
+/* Badges and usernames are disabled. 
 Enable them by changing the display property to 'inline-block'
-Disable them by changing the display property to 'none'
-*/
+Disable them by changing the display property to 'none' */
+
 .badge {
     display: none;
     margin-right: 0.2em;

@@ -25,6 +25,7 @@ Recommended streamlabs Settings:
 
 Updates:
 -Added additional .html and .js files to randomize chat line height
+-Badges and display names can be added without breaking the scrolling animation
 
 To Do:
 -Fix scrolling message text snapping back to the center
