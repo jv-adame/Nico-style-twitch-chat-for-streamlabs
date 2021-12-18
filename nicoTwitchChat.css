@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700);
 
-/*Basic scrolling animation.
+/*
+    Basic scrolling animation.
 
 	LRMove 100% {left: -x%}
     x needs to be equal or greater than the Chatlist item's width which is shown in #log>div{...}

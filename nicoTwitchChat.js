@@ -5,9 +5,11 @@ document.addEventListener('onLoad', function(obj) {
 });
 
 document.addEventListener('onEventReceived', function(obj) {
-  let replace = getRandomPercent();
+  
+  let reposition = getRandomPercent();
   let message = document.getElementById(obj['detail']['messageId']);
-	message.style.top = replace;
+
+	message.style.top = reposition;
   
 });
 
