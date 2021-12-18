@@ -26,7 +26,7 @@ Recommended streamlabs Settings:
 Updates:  
 
 18/12/21  
--Scrolling chatlist item should no longer reappear after scrolling offscreen  
+-Chatlist item should no longer reappear after scrolling offscreen  
 
 17/12/21  
 -Added additional .html and .js files to randomize chat line height  
