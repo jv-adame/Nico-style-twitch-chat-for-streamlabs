@@ -1,13 +1,24 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:700);
 
-/*Basic scrolling animation.  If the text lingers on screen increase {left:120%;} and {right: 120%;}*/
+/*Basic scrolling animation.
+
+	LRMove 100% {left: -x%}
+    x needs to be equal or greater than the Chatlist item's width which is shown in #log>div{...}
+	
+	For example, if #log>div {width: 70%}
+	LRMove 100% {left: -70%}
+
+	RLMove is needed to ensure the message remains offscreen after the LRMove animation is completed
+	RLMove needs to remain unchanged
+*/
+
 @keyframes LRMove {    
     0% {left: 120%;}
-    100% {left: 0%;} 
+    100% {left: -65%;} 
 }
 
 @keyframes RLMove {
-    0% {right: 0%;}
+    0% {right: 120%;}
     100% {right: 120%;}
 }
 
@@ -47,20 +58,14 @@ body {
 }
 
 #log>div {
-    /*
-        Message width being equal to the width of the chatbox
-        is a workaround for the scrolling animation snapping back towards the center
-        after it reaches the chatbox left-handed boarder
-        Still working towards a solution 
-    */
-
-
+  
     opacity: .8;    
     position: absolute;
-  	animation: LRMove 6s linear, RLMove 6s linear 6s forwards;  
-    -webkit-animation: LRMove 6s linear, RLMove 6s linear 6s forwards;
+  	/*Adjust animation scrolling speed change 6s for 'animation' AND ''-webkit-animation' */
+  	animation: LRMove 6s linear, RLMove 1s linear 1s forwards;  
+    -webkit-animation: LRMove 6s linear, RLMove 1s linear 1s forwards;
     word-wrap: break-word;
-    width: 100%;  
+    width: 65%;  
 }
 
 #log>div.deleted {
