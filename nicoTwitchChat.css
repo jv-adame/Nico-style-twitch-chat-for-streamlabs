@@ -47,13 +47,20 @@ body {
 }
 
 #log>div {
-  
+    /*
+        Message width being equal to the width of the chatbox
+        is a workaround for the scrolling animation snapping back towards the center
+        after it reaches the chatbox left-handed boarder
+        Still working towards a solution 
+    */
+
+
     opacity: .8;    
     position: absolute;
   	animation: LRMove 6s linear, RLMove 6s linear 6s forwards;  
     -webkit-animation: LRMove 6s linear, RLMove 6s linear 6s forwards;
     word-wrap: break-word;
-    width: 65%;  
+    width: 100%;  
 }
 
 #log>div.deleted {
@@ -106,7 +113,7 @@ Disable them by changing the display property to 'none' */
 }
 
 .name {
-  	display: inline-block;
+  	display: none;
     margin-left: 0.2em;
 }
 
