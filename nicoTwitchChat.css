@@ -107,9 +107,11 @@ body {
 
 }
 
-/* Badges and usernames are disabled. 
-Enable them by changing the display property to 'inline-block'
-Disable them by changing the display property to 'none' */
+/* 
+    Badges and usernames are disabled. 
+    Enable them by changing the display property to 'inline-block'
+    Disable them by changing the display property to 'none' 
+*/
 
 .badge {
     display: none;

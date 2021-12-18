@@ -5,7 +5,7 @@ document.addEventListener('onLoad', function(obj) {
 });
 
 document.addEventListener('onEventReceived', function(obj) {
-  
+
   let reposition = getRandomPercent();
   let message = document.getElementById(obj['detail']['messageId']);
 
@@ -19,8 +19,10 @@ function getRandomPercent(){
     relative to the top of the chatbox 
   */
 
- // Adjust the minimum and maximum height the chat messages will display
- // min and max need to be integers between 0 and 100 
+  /*
+    Adjust the minimum (min) and maximum (max) height the chat messages will display
+    min and max need to be integers between 0 and 100 
+  */
 
   let min = 0;
   let max = 80;  
